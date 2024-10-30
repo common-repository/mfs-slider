@@ -1,0 +1,44 @@
+.tns-outer {
+    position: relative;
+}
+.tns-controls button {
+    border: none;
+    font-size: 0px;
+    background-image: url(setaSlider.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 30px;
+    height: 46px;
+    opacity: 0.9;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-color: transparent !important;
+}
+.tns-controls button:hover {
+    opacity: 0.5;
+}
+.tns-controls button:focus {
+    outline: none;
+}
+.tns-controls button:first-child {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    -moz-transform: translateY(-50%) rotate(180deg);
+    -ms-transform: translateY(-50%) rotate(180deg);
+    -o-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+    left: 50px;
+}
+.tns-controls button:last-child {
+    right: 50px;
+}
